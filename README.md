@@ -32,3 +32,4 @@ https://wrappedinmusic.com/song-list (mentioned in the mail)
 # Note:
     1. To properly test this app please make sure the device has active internet connection.
     2. If app is killed by user, can navigate back to the app on tapping the notification.
+    3. For properly close the app, first close the notification by clicking stop button and then close the app.
