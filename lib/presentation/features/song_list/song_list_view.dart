@@ -112,7 +112,7 @@ class _SongListPageState extends State<SongListPage> {
               padding: const EdgeInsets.symmetric(vertical: 12),
               child: Obx(
                 () => Text(
-                  "\$ ${int.parse(controller.selectedMusic.value?.amount ?? "0").toStringAsPrecision(3)}",
+                  "\$ ${double.parse(controller.selectedMusic.value?.amount ?? "0")}",
                   style: Get.textTheme.headlineMedium!.copyWith(
                       color: AppColor.secondary, fontWeight: FontWeight.w900),
                 ),

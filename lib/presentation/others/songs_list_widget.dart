@@ -373,7 +373,7 @@ class _SongsListWidgetState extends State<SongsListWidget> {
                                         verticalAlignment:
                                             TableCellVerticalAlignment.middle,
                                         child: Text(
-                                          "\$ ${int.parse(music.amount ?? "0").toStringAsPrecision(3)}",
+                                          "\$ ${double.parse(music.amount ?? "0")}",
                                           style: Get.textTheme.titleMedium!
                                               .copyWith(
                                                   color:
@@ -569,7 +569,7 @@ class _SongsListWidgetState extends State<SongsListWidget> {
                                                 TableCellVerticalAlignment
                                                     .middle,
                                             child: Text(
-                                              "\$ ${int.parse(music.amount ?? "0").toStringAsPrecision(3)}",
+                                              "\$ ${double.parse(music.amount ?? "0")}",
                                               style: Get.textTheme.titleMedium!
                                                   .copyWith(
                                                       color: widget.selected
@@ -860,7 +860,7 @@ class _SongsListWidgetState extends State<SongsListWidget> {
                                                 TableCellVerticalAlignment
                                                     .middle,
                                             child: Text(
-                                              "\$ ${int.parse(music.amount ?? "0").toStringAsPrecision(3)}",
+                                              "\$ ${double.tryParse(music.amount ?? "0")}",
                                               style: Get.textTheme.titleMedium!
                                                   .copyWith(
                                                       color: widget.selected
